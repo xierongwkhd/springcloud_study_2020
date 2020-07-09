@@ -1,1 +1,2 @@
-springcloud
+SpringCloud学习源码
+注：整个仓库是一个父工程
