@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by MOKE on 2020/7/5.
@@ -41,5 +42,20 @@ public class PaymentController {
         }else {
             return new CommonResult(444,"无记录");
         }
+    }
+
+    @GetMapping("/lb")
+    public String getPaymentLB(){
+        return serverPort;
+    }
+
+    @GetMapping("/fegin/timeout")
+    public String paymentFeginTimeout(){
+        try{
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return serverPort;
     }
 }
