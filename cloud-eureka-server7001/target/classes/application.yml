@@ -10,7 +10,8 @@ eureka:
     # 表示自己是注册中心，不用检索服务
     fetch-registry: false
     service-url:
-      defaultZone: http://eureka7002.com:7002/eureka/
+      defaultZone: http://eureka7001.com:7001/eureka/
+#      defaultZone: http://eureka7002.com:7002/eureka/
 #  server:
 #    # 关闭自我保护模式
 #    enable-self-preservation: false
