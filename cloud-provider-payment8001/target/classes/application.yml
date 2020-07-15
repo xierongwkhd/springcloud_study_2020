@@ -23,7 +23,8 @@ eureka:
     # 表示自己是注册中心，不用检索服务
     fetch-registry: true
     service-url:
-      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
+      defaultZone: http://eureka7001.com:7001/eureka
+#      defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
   instance:
     # 修改eureka上显示的主机名
     instance-id: payment8001
